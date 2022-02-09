@@ -8,44 +8,46 @@
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
+<main>
 
-<body>
-  <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
-  <div class="header">
-    <div class="nav">
+ <body>
+  <section class="page">
+  <header class="header">
+    <nav class="nav">
       <img
         src="./images/logo.png"
         alt="Practicum Library Logo"
         class="logo"
       />
-      <div class="nav-links">
-        <a class="nav__link">Staff picks</a>
-        <a class="nav__link">Events</a>
-        <a class="nav__link">Become a member</a>
-        <a class="nav__link">About</a>
-        <a class="nav__link">Contacts</a>
-      </div>
-    </div>
+      <nav class="nav-links">
+        <a href="#staff" class="nav__link">Staff picks</a>
+        <a href="#events" class="nav__link">Events</a>
+        <a href="#new-member" class="nav__link">Become a member</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#footer" class="nav__link">Contacts</a>
+      </nav>
+    </nav>
     <h1 class="header__title">Welcome to the Practicum Library</h1>
     <p class="header__description">
       We're pleased to open our library doors to everyone! Come and expand
       your development knowledge, or just use this lovely spot to work or
       study. This is a cool place for cool students!
     </p>
-    <!-- <img src="./images/inside_the_library.png" alt="Illustration 'Inside the library'" class="header__image" /> -->
+     <img src="./images/inside_the_library.png" alt="Illustration 'Inside the library'" class="header__image" /> 
     <div class="header__footer">
-      <a class="header__link">About the library &darr;</a>
-      <div class="header__address">
+      <a href="#about" class="header__link">About the library &darr;</a>
+      <h6 class="header__address">
         200 Success Avenue, The Town of Practicum
-      </div>
+      </h6>
     </div>
-  </div>
+  </header>
 
-  <div class="content">
-    <div class="staff">
+
+    <section id="staff" class="staff">
       <h2 class="staff__title">Staff picks</h2>
       <h3 class="staff__subtitle">That our readers love</h3>
-      <!-- Wrap those cards! -->
+      
+      <div class="staff__cards">
       <div class="card">
         <div class="card__content">
           <h4 class="card__title">Introduction to Algorithms</h4>
@@ -62,6 +64,7 @@
           </p>
         </div>
       </div>
+    
 
       <div class="card">
         <div class="card__content">
@@ -113,21 +116,22 @@
           <p class="card__footer">Steve McConnell</p>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <div class="events">
+    <section id="events" class="events">
       <div class="events__content">
-        <h3 class="events__heading">Upcoming events:</h3>
+        <p class="events__heading">Upcoming events:</p>
         <h2 class="events__title">
           In honor of Joan Feynman: Women in astrophysics
         </h2>
         <div class="event-info events__info-section">
           <div class="event-info__item">
-            <div class="event-info__icon event-info__icon_calendar"></div>
+            <img src="./images/icon_calendar.svg" class="event-info__icon event-info__icon_calendar">
             <p class="event-info__text">Mon, January 12</p>
           </div>
           <div class="event-info__item">
-            <div class="event-info__icon event-info__icon_pin"></div>
+            <img src="./images/icon_pin.svg" class="event-info__icon event-info__icon_pin">
             <p class="event-info__text">
               Practicum Library Conference Hall & Online
             </p>
@@ -144,10 +148,41 @@
         </p>
         <a href="#" class="events__more">More events &rarr;</a>
       </div>
-      <!-- Start creating the composition here -->
-    </div>
+      
+  
+      <div class="events__cover">
+        <img src="./images/cafe.png" alt="Cafe picture" class="events__image">
+         
+        <div class="person person_name_feynman">
+        <p class="person__caption">Joan Feyman</p>
+        <img src="./images/person_feynman.png" alt="Feynman" class=" person__image person__image_size_l ">
+        </div>
 
-    <div class="membership">
+        <div class="person person_name_burbidge">
+        <p class="person__caption">Margaret Burbidge</p>
+        <img src="./images/person_burbidge.png" alt="Margaret Burbidge" class=" person__image person__image_size_m ">
+        </div>
+
+        <div class="person person_name_cannon">
+        <img src="./images/person_cannon.png" alt="Annie Jump Cannon" class=" person__image person__image_size_m ">
+        <p class="person__caption">Annie Jump Cannon</p>
+        </div>
+
+        <div class="person person_name_mitchell">
+        <img src="./images/person_mitchell.png" alt="Maria Mitchell" class=" person__image person__image_size_s ">
+        <p class="person__caption">Maria Mitchell</p>
+
+        </div>
+
+        <div class="person person_name_tarter">
+        <p class="person__caption">Jill Tarter</p>
+        <img src="./images/person_tarter.png" alt="Jill Tarter" class=" person__image person__image_size_m ">
+        </div>
+       </div>
+
+    </section>
+
+    <section id="new-member" class="membership">
       <h2 class="membership__title">Becoming a library member is easy!</h2>
       <ul class="membership__steps">
         <li class="step">
@@ -165,7 +200,7 @@
             Step 2
             <span class="step__icon"></span>
             <img src="./images/icon_step_forward.svg" alt="icon forward" class="" />
-          </div>
+        </div>
           <p class="step__description">
             Come pick up your library card at the front desk.
           </p>
@@ -176,7 +211,7 @@
             <span class="step__icon"></span>
             <img src="./images/icon_step_forward.svg" alt="icon forward" class="" />
           </div>
-          <p class="step__description">Sign the back of the card.</p>
+          <p class=" step__description">Sign the back of the card .</p>
         </li>
         <li class="step">
           <div class="step__title">
@@ -189,10 +224,12 @@
           </p>
         </li>
       </ul>
-    </div>
-    <div class="about">
-      <h2 class="about__title">About the library</h2>
+    </section>
+    
+    <section id="about" class="about">
+      
       <div class="about__content">
+        <h2 class="about__title">About the library</h2>
         <p class="about__paragraph">
           Libraries are essential establishments in practically every city,
           and Practicum's library is no exception. It first opened its doors
@@ -211,12 +248,48 @@
           the American Geophysical Union.
         </p>
       </div>
-      <!-- <div class="about__circle"></div> -->
-    </div>
+      <div class="about__circle"></div>
+
+    </section>
+      <footer id="footer" class="footer" >
+ 
+   <div class="footer__columns">
+       
+     <div>
+    <img src="./images/logo_white.png" alt="Logo" class="footer__logo footer__list-item">
+   </div>
+   <div  class="footer__column_hours">
+   <h3 class="footer__column-heading">Hours</h3>
+   <ul class="footer__list">
+   <li class="footer__list-item" >
+      <h5 > Weekdays: 9am-8pm</h5>
+   </li>
+   <li class="footer__list-item">
+      <h5>Weekends: 10am-6pm</h5>
+   </li>
+   </ul>
+   </div>
+
+  <div class="footer__column_social">
+  <h3 class=" footer__column_heading">Social Media</h3>
+  <ul class="footer__list">
+  <li class="footer__list-item">
+  <img src="./images/facebook_white.svg" alt="Facebook icon" class="footer__social-icon">
+  <a href="#" class="footer__column-link">Facebook</a>
+  </li>
+  <li class="footer__list-item">
+  <img src="./images/instagram_white.svg" alt="Instagram icon" class="footer__social-icon">
+    <a href="#" class="footer__column-link">Instagram</a>
+  </li>
+  </ul>
   </div>
-  <div class="footer">
-    <!-- The time to mark up the footer has come, you can do it 💪 -->
-  </div>
+  <p class="footer__copyrights">© 2022 Tamer Jb</p>
+   </div>
+
+  </footer>
+</main>
+
+
 </body>
 
 </html>

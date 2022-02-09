@@ -98,7 +98,7 @@
 
 /* Add the hover state styles for .header__link here */
 .header__link:hover {
-  color: #1f69c9
+  color: #1f69c9;
 }
 
 .header__address {
@@ -126,7 +126,7 @@
   margin-bottom: 68px;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+
 .staff__cards {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +155,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 
 .card__title {
@@ -255,7 +254,7 @@
 
 
 .events__more:hover {
-  color: #1f69c9
+  color: #1f69c9;
 }
 
 .events__cover {

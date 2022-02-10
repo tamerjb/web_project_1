@@ -1,6 +1,3 @@
-/* Add your class here */
-@import url(./normalize.css);
-
 .page {
   margin: 0 auto;
   min-width: 1100px;
@@ -42,16 +39,17 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+  list-style-type: none;
 }
 
-.nav__link {
+.nav__links {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
 
 /* Add the hover state styles for .nav__link here */
-.nav__link:hover {
+.nav__links:hover {
   color: #1f69c9;
 }
 
@@ -61,12 +59,16 @@
   font-weight: 500;
   line-height: 76px;
   margin: 150px 0 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   max-width: 465px;
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -103,6 +105,7 @@
 
 .header__address {
   color: #838383;
+  margin: 0;
 }
 
 .staff {
@@ -140,10 +143,10 @@
 .card {
   background-color: #fff;
   border-radius: 6px;
-  padding: 32px 40px 100px 32px;
+  padding: 32px 40px 60px 32px;
   box-sizing: border-box;
-  max-width: 360px;
-  max-height: 420px;
+  width: 360px;
+  height: 420px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -165,7 +168,7 @@
 }
 
 .card__text {
-  margin: 20px 0 0;
+  margin: 20px 0;
   font-size: 16px;
   line-height: 24px;
 
@@ -176,9 +179,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  position: absolute;
-  bottom: -60px;
-  /* edited from 0 to -60 - there was problem with the card footer*/
+  bottom: 0;
 
 }
 
@@ -227,13 +228,16 @@
   max-height: 24px;
 }
 
-.event-info__icon_calendar {
+/* .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
+  i have used img instead
 }
 
-.event-info__icon_pin {
+.event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-}
+  i have used img instead
+
+} */
 
 .event-info__text {
   font-size: 20px;
@@ -397,7 +401,8 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  z-index: 1;
 
 }
 
@@ -407,8 +412,7 @@
   font-weight: 500;
   max-width: 154px;
   position: relative;
-  z-index: 1;
-
+  padding-bottom: 300px;
 }
 
 .about__content {
@@ -417,17 +421,12 @@
   font-weight: 400;
   max-width: 660px;
   text-align: left;
-  z-index: 2;
-  position: relative;
-  padding-right: 120px;
+  padding-left: 120px;
 }
 
 .about__paragraph {
-  z-index: 3;
-  position: relative;
-  left: 240px;
-  bottom: 50px;
-  padding-bottom: 32px;
+  padding: 0;
+
 }
 
 .about__circle {
@@ -435,12 +434,10 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
   position: absolute;
   top: -121px;
   left: -91px;
-
-
 
 }
 
@@ -449,35 +446,37 @@
   background-color: #1f1f1f;
 }
 
+.footer__column {
+  padding: 0;
+
+}
+
 .footer__columns {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-end;
-  position: relative;
+  justify-content: space-between;
   padding: 57px 102px 60px 80px;
 }
 
-.footer__column_hours {
-  position: relative;
-  right: 100px;
-  color: white;
-
-}
-
-.footer__column_social {
+.footer__column_type_hours {
 
   color: white;
-
+  margin-left: auto;
+  margin-right: 100px;
 }
 
+.footer__column_type_social {
+
+  color: white;
+  padding: 0;
+}
 
 
 .footer__logo {
   max-width: 153px;
   background-color: #1f1f1f;
-  position: absolute;
-  left: 80px;
+
 
 }
 
@@ -490,13 +489,13 @@
 .footer__list-item {
 
   padding: 0;
-  margin: 0;
 
 }
 
 .footer__column-heading {
 
   color: white;
+  padding: 0;
 
 }
 
@@ -513,14 +512,15 @@
 
 .footer__social-icon {
   position: relative;
+  padding: 0;
 
 }
 
 .footer__copyrights {
 
-  position: absolute;
-  bottom: 0;
-  left: 80px;
+  position: relative;
+  padding: 0 80px 60px;
+  margin: 0;
   background-color: #1f1f1f;
   color: white;
 

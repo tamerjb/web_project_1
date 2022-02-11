@@ -15,12 +15,12 @@
     <header class="header">
       <nav class="nav">
         <img src="./images/logo.png" alt="Practicum Library Logo" class="logo" />
-        <ul class="nav-links">
-          <li><a href="#staff" class="nav__links">Staff picks</a></li>
-          <li><a href="#events" class="nav__links">Events</a></li>
-          <li><a href="#new-member" class="nav__links">Become a member</a></li>
-          <li><a href="#about" class="nav__links">About</a></li>
-          <li><a href="#footer" class="nav__links">Contacts</a></li>
+        <ul class="nav__links">
+          <li><a href="#staff" class="nav__links-item">Staff picks</a></li>
+          <li><a href="#events" class="nav__links-item">Events</a></li>
+          <li><a href="#new-member" class="nav__links-item">Become a member</a></li>
+          <li><a href="#about" class="nav__links-item">About</a></li>
+          <li><a href="#footer" class="nav__links-item">Contacts</a></li>
         </ul>
       </nav>
       <h1 class="header__title">Welcome to the Practicum Library</h1>
@@ -44,9 +44,9 @@
       <p class="staff__subtitle">That our readers love</p>
 
       <div class="staff__cards">
-        <div class="card">
+        <article class="card">
           <div class="card__content">
-            <p class="card__title">Introduction to Algorithms</p>
+            <h2 class="card__title">Introduction to Algorithms</h2>
             <p class="card__text">
               The name of this book is self-explanatory; it's a proper
               introduction to algorithms! Introduction to Algorithms, or
@@ -59,14 +59,14 @@
               Clifford Stein
             </p>
           </div>
-        </div>
+        </article>
 
 
-        <div class="card">
+        <article class="card">
           <div class="card__content">
-            <p class="card__title">
+            <h2 class="card__title">
               The Structure and Interpretation of Computer Programs (SICP)
-            </p>
+            </h2>
             <p class="card__text">
               This is one of the best books for learning the fundamentals of
               programming. Featured by MIT in one of their foundational
@@ -78,7 +78,7 @@
               Harold Abelson, Gerald Jay Sussman, Julie Sussman
             </p>
           </div>
-        </div>
+        </article>
 
         <article class="card">
           <div class="card__content">
@@ -97,7 +97,7 @@
           </div>
         </article>
 
-        <div class="card">
+        <article class="card">
           <div class="card__content">
             <h2 class="card__title">
               Code Complete: A Practical Handbook of Software Construction
@@ -111,7 +111,8 @@
             </p>
             <p class="card__footer">Steve McConnell</p>
           </div>
-        </div>
+        </article>
+
       </div>
     </section>
 
@@ -179,7 +180,7 @@
     </section>
 
     <section id="new-member" class="membership">
-      <p class="membership__title">Becoming a library member is easy!</p>
+      <h2 class="membership__title">Becoming a library member is easy!</h2>
       <ul class="membership__steps">
         <li class="step">
           <div class="step__title">
@@ -270,15 +271,15 @@
         </div>
 
         <div class="footer__column footer__column_type_social ">
-          <p class=" footer__column footer__column_heading">Social Media</p>
+          <h3 class="footer__column-heading">Social Media</h3>
           <ul class="footer__list">
-            <li class="footer__list footer__list-item">
+            <li class=" footer__list-item">
               <img src="./images/facebook_white.svg" alt="Facebook icon" class="footer__social-icon">
-              <a href="#" class="footer__column footer__column-link">Facebook</a>
+              <a href="#" class="footer__column-link">Facebook</a>
             </li>
-            <li class="footer__list footer__list-item">
+            <li class="footer__list-item">
               <img src="./images/instagram_white.svg" alt="Instagram icon" class="footer__social-icon">
-              <a href="#" class="footer__column footer__column-link">Instagram</a>
+              <a href="#" class="footer__column-link">Instagram</a>
             </li>
           </ul>
         </div>
